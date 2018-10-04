@@ -16,6 +16,7 @@ Rails.application.routes.draw do
   # 把resources写成了resource, 所以报错找不到show action
   namespace :account do
     resources :groups
+    resources :posts
   end
 
 

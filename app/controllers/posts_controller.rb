@@ -20,6 +20,12 @@ class PostsController < ApplicationController
 
   end
 
+
+  def destroy
+    @post.destroy
+    redirect_to groups_path, alert: "Post deleted"
+  end
+
   private
 
   def post_params
